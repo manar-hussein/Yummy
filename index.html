@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yummy</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="loading" class="bg-black">
+      <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+        <div class="sk-chase">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+      </div>
+      
+
+    </section>
+    <nav class="d-flex justify-content-start">
+      <div
+        class="navbody bg-black py-4 d-flex flex-column justify-content-between"
+      >
+        <ul class="list-group ps-3 animate__animated animate__slideInUp">
+          <li class="nav-item list-unstyled ">
+            <button id="searchItem" class="nav-link p-2 ps-0 text-white fw-bolder fs-5" href="./search.html">Search</button>
+          </li>
+          <li class="nav-item list-unstyled">
+            <button class="nav-link p-2 ps-0 text-white fw-bolder fs-5" id="Categories">Categories</button>
+          </li>
+          <li class="nav-item list-unstyled">
+            <button class="nav-link p-2 ps-0 text-white fw-bolder fs-5" id="areaBtn">Area</button>
+          </li>
+          <li class="nav-item list-unstyled">
+            <button class="nav-link p-2 ps-0 text-white fw-bolder fs-5" id="ingrsBtn">Ingredients</button>
+          </li>
+          <li class="nav-item list-unstyled">
+            <button class="nav-link p-2 ps-0 text-white fw-bolder fs-5" id="conatctBtn">Contact Us</button>
+          </li>
+        </ul>
+
+        <div class="py-5 ps-3">
+          <ul class="d-flex justify-content-start p-0 m-0">
+            <li class="list-unstyled">
+              <a class="text-decoration-none" href=""
+                ><i class="fa-brands fa-facebook text-white fa-lg me-2"></i
+              ></a>
+            </li>
+            <li class="list-unstyled">
+              <a class="text-decoration-none" href=""
+                ><i class="fa-brands fa-twitter text-white fa-lg me-2"></i
+              ></a>
+            </li>
+            <li class="list-unstyled">
+              <a class="text-decoration-none" href=""
+                ><i class="fa-solid fa-globe text-white fa-lg me-2"></i
+              ></a>
+            </li>
+          </ul>
+          <p class="fw-bolder text-white m-0">
+            Copyright Â© 2019 All Rights Reserved.
+          </p>
+        </div>
+      </div>
+      <div
+        class="navHeader bg-white d-flex flex-column justify-content-between align-items-center"
+      >
+        <img src="./img/logo.png" class="" />
+        <i class="fa-solid fa-bars fa-2xl closebtn"></i>
+        <div>
+          <li class="list-unstyled">
+            <a class="text-decoration-none" href=""
+              ><i class="fa-solid text-black fa-globe me-2"></i
+            ></a>
+          </li>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </nav>
+    <section id="mealInfo" class="vh-100 py-5">
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-md-3" id="header">
+           
+          </div>
+          <div class="col-md-9">
+           <div id="mainInfo">
+         
+           </div>
+           <div >
+            <h3 class="fw-bolder">Recipes : 
+              <div class="row py-3" id="reec">
+                <!-- <div class="col-md-2">
+                  <span class="fw-normal fs-6 bg-info rounded-5 px-3 text-black py-1">1 cup Lentils</span>
+                </div> -->
+              </div>
+            </h3>
+           </div>
+            <div>
+              <h3 class="fw-bolder">Tags : 
+                <div class="row py-3" id="tag">
+                  
+                </div>
+              </h3>
+            </div>
+          </div>
+
+        </div>
+    
+      </div>
+    </section>
+    <section id="search" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" id="searchName" class="form-control bg-black text-white" placeholder="Search By Name">
+          </div>
+          <div class="col-md-6">
+            <input type="text" id="searchLetter" class="form-control bg-black text-white" placeholder="Search By First Letter">
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="category" class="py-5">
+      <div class="container">
+        <div class="row g-3" id="categoryCard">
+          
+        </div>
+      </div>
+
+    </section>
+    <section id="headPage">
+      <div class="container py-5" id="face">
+        <div class="row g-3" id="meals"></div>
+      </div>
+    </section>
+    <section id="searchDisplay">
+      <div class="container py-5" id="face">
+        <div class="row g-3" id="searchMeaals"></div>
+      </div>
+    </section>
+    <section id="area" class=" py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center gy-5">
+          
+        </div>
+      </div>
+    </section>
+    <section id="ingredient" class=" py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center gy-5">
+          
+          
+        </div>
+      </div>
+
+    </section>
+    <section id="contactUs" class="py-5  vh-100 justify-content-center align-items-center">
+      <div class="container">
+        <div class="row justify-content-center align-items-center gy-5 ">
+          <div class="col-md-5">
+            <input type="text" class="form-control" placeholder="Enter Your Name" id="name">
+            <p class="text-danger fw-bolder">Name must Start With Capital Letter</p>
+          </div>
+          <div class="col-md-5">
+            <input type="email" class="form-control" placeholder="Enter Your Email" id="email">
+            <p class="text-danger fw-bolder">Email must be Valid</p>
+          </div>
+          <div class="col-md-5">
+            <input type="text" class="form-control" placeholder="Enter Your Phone" id="phone">
+            <p class="text-danger fw-bolder">Wrong Phone Number</p>
+          </div>
+          <div class="col-md-5">
+            <input type="number" class="form-control" placeholder="Enter Your Age" id="age">
+            <p class="text-danger fw-bolder">Invalid Age</p>
+          </div>
+          <div class="col-md-5">
+            <input type="password" class="form-control" placeholder="Enter Your Password" id="password">
+            <p class="text-danger fw-bolder">Enter valid password *Minimum eight characters, at least one letter and one number and one special character </p>
+          </div>
+          <div class="col-md-5">
+            <input type="password" class="form-control" placeholder="Re-Password" id="Re-password">
+            <p class="text-danger fw-bolder">not match the password </p>
+          </div>
+          <button class="btn btn-outline-danger disabled" id="submitBtn">submit</button>
+        </div>
+      </div>
+
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

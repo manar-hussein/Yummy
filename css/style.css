@@ -1,0 +1,145 @@
+body{
+    background-color: black;
+}
+.navHeader{
+    width: 10%;
+}
+.navbody{
+    width: 50%;
+}
+.navHeader img{
+    padding: 10px;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+.closebtn{
+    cursor: pointer;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow:auto;
+}
+.mealCard{
+    cursor: pointer;
+    overflow: hidden;
+}
+.mealCard:hover .layer{
+    top: 0;
+}
+input::placeholder{
+    color: white !important;
+}
+#mealInfo{
+    display: none;
+}
+#search{
+    display: none;
+}
+#category{
+    display: none;
+}
+#searchDisplay{
+    display: none;
+}
+#area .container .row .col-md-3 h3{
+    cursor: pointer;
+}
+#area{
+    display: none;
+}
+
+#ingredient .container .row .col-md-3{
+    height: 200px;
+    overflow: hidden;
+}
+#ingredient .container .row .col-md-3 h3{
+    cursor: pointer;
+}
+#contactUs{
+    display: none;
+}
+#contactUs input::placeholder{
+    color: black !important;
+}
+#contactUs button{
+    width: 20%;
+}
+#contactUs p{
+    display: none;
+    margin: 0;
+}
+
+#loading{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+}
+.sk-chase {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation: sk-chase 2.5s infinite linear both;
+  }
+  
+  .sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:before {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+  .sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+  
+  @keyframes sk-chase {
+    100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot {
+    80%, 100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot-before {
+    50% {
+      transform: scale(0.4); 
+    } 100%, 0% {
+      transform: scale(1.0); 
+    } 
+  }
