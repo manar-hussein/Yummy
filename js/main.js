@@ -184,8 +184,10 @@ async function searchByLetter (value)
 let categoryName;
 async function getAllCategory()
 {
+    $("#loading").fadeOut(500);
     let initialResponse= await fetch(`https://www.themealdb.com/api/json/v1/1/categories.php`);
     let categoryBox = await initialResponse.json();
+    $("#loading").fadeOut(500);
     displayCategory(categoryBox.categories)
    $("#category .container .row").click(function(e){
     categoryName =$(e.target).parent().parent().parent().attr('id');
